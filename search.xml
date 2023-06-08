@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>人工智能速通--搜索求解</title>
+      <link href="/2023/06/08/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%80%9F%E9%80%9A-%E6%90%9C%E7%B4%A2%E6%B1%82%E8%A7%A3/"/>
+      <url>/2023/06/08/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%80%9F%E9%80%9A-%E6%90%9C%E7%B4%A2%E6%B1%82%E8%A7%A3/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="人工智能速通——搜索求解"><a href="#人工智能速通——搜索求解" class="headerlink" title="人工智能速通——搜索求解"></a>人工智能速通——搜索求解</h1><p>软工大作业可算验收结束了，明天开始真正的速通。</p><span id="more"></span><h3 id="搜索算法基础"><a href="#搜索算法基础" class="headerlink" title="搜索算法基础"></a>搜索算法基础</h3><p><strong>搜索算法的形式化描述</strong>：&lt;状态、动作、状态转移、路径&#x2F;代价、目标测试&gt;</p><p><strong>搜索树</strong>：用一棵树来记录算法探索过的路径</p><p>搜索算法可以被看成是一个构建搜索树的过程，从根结点（初始状态）开始，不断展开每个结点的后继结点，直到某个结点通过了目标测试。</p><p><strong>搜索算法的评价指标</strong>：</p><p><img src="/%5Cpic%5Cimage-20230608200329723-16862330263411.png" alt="image-20230608200329723"></p><p><strong>搜索算法框架：树搜索</strong></p><p><img src="/%5Cpic%5Cimage-20230608200442339-16862330304803.png" alt="image-20230608200442339"></p><p><img src="/%5Cpic%5Cimage-20230608200752653.png" alt="image-20230608200752653"></p><p><strong>剪枝搜索</strong>：放弃扩展部分结点的做法</p><p><strong>图搜索</strong>：在边缘集合中所有产生环路的节点都要被剪枝，但不会排除所有潜在的可行解。因此在状态数量有限情况下，采用图搜索策略的算法也是完备的。</p><p><img src="/%5Cpic%5Cimage-20230608200937351-16862330330795.png" alt="image-20230608200937351"></p><h3 id="启发式搜索（有信息搜索）"><a href="#启发式搜索（有信息搜索）" class="headerlink" title="启发式搜索（有信息搜索）"></a>启发式搜索（有信息搜索）</h3><p>评价函数f(n)：从当前节点n出发，根据评价函数来选择后续结点。</p><p>启发函数h(n)：计算从结点n到目标结点之间所形成路径的最小代价值， 这里将两点之间的直线距离作为启发函数。</p><p>**贪婪最佳优先搜索(Greedy best-first search)**：评价函数f(n)&#x3D;启发函数h(n)</p><p>A*<strong>算法</strong>：评价函数f(n)&#x3D;g(n)+h(n)，g(n) 表示从起始结点到结点n的开销代价值，h(n) 表示从结点n到目标结点路径中所估算的最小开销代价值。</p><p><strong>A*算法的最优性</strong>：</p><p>基于树搜索的A* 算法中，如果启发函数是可容的，则A*算法是最优的。</p><p>基于图搜索的A* 算法中，如果启发函数是⼀致的，则A*算法是最优的。</p><h3 id="对抗搜索（博弈搜索）"><a href="#对抗搜索（博弈搜索）" class="headerlink" title="对抗搜索（博弈搜索）"></a>对抗搜索（博弈搜索）</h3><p><strong>最小最大搜索算法</strong>：使用递归算法计算每个后继的最小最大值。</p><p><strong>Alpha-Beta 剪枝搜索算法</strong>在Minimax算法中可减少被搜索的结点数，即在保证得到与原 Minimax算法同样的搜索结果时，剪去了不影响最终结果的搜索分枝。</p><p><img src="/%5Cpic%5Cimage-20230608203805040-16862330439367.png" alt="image-20230608203805040"></p><p>（MAX先手）</p><h3 id="蒙特卡洛树搜索"><a href="#蒙特卡洛树搜索" class="headerlink" title="蒙特卡洛树搜索"></a>蒙特卡洛树搜索</h3><p><img src="/%5Cpic%5Cimage-20230608204534307-16862330461509.png" alt="image-20230608204534307"></p><p><img src="/%5Cpic%5Cimage-20230608204542055.png" alt="image-20230608204542055"></p><p><strong>贪心算法</strong></p><p><img src="/%5Cpic%5Cimage-20230608205027809-168623304788711.png" alt="image-20230608205027809"></p><p><strong>不足</strong>：忽略了其他从未摇动或很少摇动的赌博机，而失去了可能的机会。</p><p><strong>ϵ-贪心算法</strong></p><p><img src="/%5Cpic%5Cimage-20230608205457848-168623304936413.png" alt="image-20230608205457848"></p><p><strong>不足</strong>：与被探索的次数无关。</p><p><strong>上限置信区间算法</strong>：为每个动作的奖励期望计算一个估计范围，优先采用估计范围上限较高的动作。</p><p><img src="/%5Cpic%5Cimage-20230608205827930-168623305180015.png" alt="image-20230608205827930"></p><p><img src="/%5Cpic%5Cimage-20230608205954078.png" alt="image-20230608205954078"></p><p><img src="/%5Cpic%5Cimage-20230608210116090.png" alt="image-20230608210116090"></p><p><strong>蒙特卡洛树搜索算法（MCTS）</strong></p><p><img src="/%5Cpic%5Cimage-20230608210247964-168623305527417.png" alt="image-20230608210247964"></p><p><img src="/%5Cpic%5Cimage-20230608210322489-168623306089719.png" alt="image-20230608210322489"></p><p><img src="/%5Cpic%5Cimage-20230608210354683.png" alt="image-20230608210354683"></p><p><img src="/%5Cpic%5Cimage-20230608210406120-168623306797621.png" alt="image-20230608210406120"></p><p><img src="/%5Cpic%5Cimage-20230608210749771-168623306991023.png" alt="image-20230608210749771"></p><p>在更新时，会将MIN层结点现有总分 加上终局得分分数， MAX层结点现有总分减去终局得分分数。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 人工智能 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>人工智能考试速通--逻辑与推理</title>
       <link href="/2023/06/07/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%80%9F%E9%80%9A-%E9%80%BB%E8%BE%91%E4%B8%8E%E6%8E%A8%E7%90%86/"/>
       <url>/2023/06/07/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%80%9F%E9%80%9A-%E9%80%BB%E8%BE%91%E4%B8%8E%E6%8E%A8%E7%90%86/</url>
