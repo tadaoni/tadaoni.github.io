@@ -20,37 +20,54 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"default"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"manual","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="人工智能速通——搜索求解软工大作业可算验收结束了，明天开始真正的速通。">
+  <meta name="description" content="人工智能速通–有监督学习这一章是期末占比最大的，最重要也是最长的。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="人工智能速通--搜索求解">
-<meta property="og:url" content="http://example.com/2023/06/08/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%80%9F%E9%80%9A-%E6%90%9C%E7%B4%A2%E6%B1%82%E8%A7%A3/index.html">
+<meta property="og:title" content="人工智能速通--有监督学习">
+<meta property="og:url" content="http://example.com/2023/06/09/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%80%9F%E9%80%9A-%E6%9C%89%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0/index.html">
 <meta property="og:site_name" content="Tadaoni&#39;s Blog">
-<meta property="og:description" content="人工智能速通——搜索求解软工大作业可算验收结束了，明天开始真正的速通。">
+<meta property="og:description" content="人工智能速通–有监督学习这一章是期末占比最大的，最重要也是最长的。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230608200329723-16862330263411.png">
-<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230608200442339-16862330304803.png">
-<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230608200752653.png">
-<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230608200937351-16862330330795.png">
-<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230608203805040-16862330439367.png">
-<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230608204534307-16862330461509.png">
-<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230608204542055.png">
-<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230608205027809-168623304788711.png">
-<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230608205457848-168623304936413.png">
-<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230608205827930-168623305180015.png">
-<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230608205954078.png">
-<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230608210116090.png">
-<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230608210247964-168623305527417.png">
-<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230608210322489-168623306089719.png">
-<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230608210354683.png">
-<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230608210406120-168623306797621.png">
-<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230608210749771-168623306991023.png">
-<meta property="article:published_time" content="2023-06-08T11:54:42.000Z">
-<meta property="article:modified_time" content="2023-06-08T14:07:31.523Z">
+<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230609102300782-16863015270241.png">
+<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230609102659014-16863015301043.png">
+<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230609102847769-16863015315465.png">
+<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230609103132360-16863015335387.png">
+<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230609104151321-16863015358889.png">
+<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230609104425585-168630154148911.png">
+<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230609104834645-168630154314113.png">
+<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230609105123015.png">
+<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230609105211967.png">
+<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230609105221089.png">
+<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230609110644279.png">
+<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230609111016197.png">
+<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230609111645579.png">
+<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230609112355285.png">
+<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230609113414781.png">
+<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230609113938102.png">
+<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230609114028235.png">
+<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230609114111253.png">
+<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230609121527105.png">
+<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230609122947503.png">
+<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230609124201247.png">
+<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230609153227140.png">
+<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230609153523059.png">
+<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230609153704702.png">
+<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230609154157388.png">
+<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230609154427090.png">
+<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230609154451735.png">
+<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230609154654662.png">
+<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230609163618609.png">
+<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230609164237754.png">
+<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230609164306489.png">
+<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230609165545680.png">
+<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230609165609875.png">
+<meta property="og:image" content="http://example.com/%5Cpic%5Cimage-20230609165618016.png">
+<meta property="article:published_time" content="2023-06-09T02:11:33.000Z">
+<meta property="article:modified_time" content="2023-06-09T09:06:34.684Z">
 <meta property="article:author" content="Mr.T">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/%5Cpic%5Cimage-20230608200329723-16862330263411.png">
+<meta name="twitter:image" content="http://example.com/%5Cpic%5Cimage-20230609102300782-16863015270241.png">
 
-<link rel="canonical" href="http://example.com/2023/06/08/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%80%9F%E9%80%9A-%E6%90%9C%E7%B4%A2%E6%B1%82%E8%A7%A3/">
+<link rel="canonical" href="http://example.com/2023/06/09/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%80%9F%E9%80%9A-%E6%9C%89%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0/">
 
 
 <script id="page-configurations">
@@ -63,7 +80,7 @@
   };
 </script>
 
-  <title>人工智能速通--搜索求解 | Tadaoni's Blog</title>
+  <title>人工智能速通--有监督学习 | Tadaoni's Blog</title>
   
 
 
@@ -226,7 +243,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/06/08/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%80%9F%E9%80%9A-%E6%90%9C%E7%B4%A2%E6%B1%82%E8%A7%A3/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/06/09/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%80%9F%E9%80%9A-%E6%9C%89%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/test.jpg">
@@ -239,7 +256,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          人工智能速通--搜索求解
+          人工智能速通--有监督学习
         </h1>
 
         <div class="post-meta">
@@ -250,7 +267,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2023-06-08 19:54:42 / 修改时间：22:07:31" itemprop="dateCreated datePublished" datetime="2023-06-08T19:54:42+08:00">2023-06-08</time>
+              <time title="创建时间：2023-06-09 10:11:33 / 修改时间：17:06:34" itemprop="dateCreated datePublished" datetime="2023-06-09T10:11:33+08:00">2023-06-09</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -268,7 +285,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>874</span>
+              <span>1k</span>
             </span>
 
         </div>
@@ -280,50 +297,69 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="人工智能速通——搜索求解"><a href="#人工智能速通——搜索求解" class="headerlink" title="人工智能速通——搜索求解"></a>人工智能速通——搜索求解</h1><p>软工大作业可算验收结束了，明天开始真正的速通。</p>
+        <h1 id="人工智能速通–有监督学习"><a href="#人工智能速通–有监督学习" class="headerlink" title="人工智能速通–有监督学习"></a>人工智能速通–有监督学习</h1><p>这一章是期末占比最大的，最重要也是最长的。</p>
 <span id="more"></span>
 
-<h3 id="搜索算法基础"><a href="#搜索算法基础" class="headerlink" title="搜索算法基础"></a>搜索算法基础</h3><p><strong>搜索算法的形式化描述</strong>：&lt;状态、动作、状态转移、路径&#x2F;代价、目标测试&gt;</p>
-<p><strong>搜索树</strong>：用一棵树来记录算法探索过的路径</p>
-<p>搜索算法可以被看成是一个构建搜索树的过程，从根结点（初始状态）开始，不断展开每个结点的后继结点，直到某个结点通过了目标测试。</p>
-<p><strong>搜索算法的评价指标</strong>：</p>
-<p><img src="/%5Cpic%5Cimage-20230608200329723-16862330263411.png" alt="image-20230608200329723"></p>
-<p><strong>搜索算法框架：树搜索</strong></p>
-<p><img src="/%5Cpic%5Cimage-20230608200442339-16862330304803.png" alt="image-20230608200442339"></p>
-<p><img src="/%5Cpic%5Cimage-20230608200752653.png" alt="image-20230608200752653"></p>
-<p><strong>剪枝搜索</strong>：放弃扩展部分结点的做法</p>
-<p><strong>图搜索</strong>：在边缘集合中所有产生环路的节点都要被剪枝，但不会排除所有潜在的可行解。因此在状态数量有限情况下，采用图搜索策略的算法也是完备的。</p>
-<p><img src="/%5Cpic%5Cimage-20230608200937351-16862330330795.png" alt="image-20230608200937351"></p>
-<h3 id="启发式搜索（有信息搜索）"><a href="#启发式搜索（有信息搜索）" class="headerlink" title="启发式搜索（有信息搜索）"></a>启发式搜索（有信息搜索）</h3><p>评价函数f(n)：从当前节点n出发，根据评价函数来选择后续结点。</p>
-<p>启发函数h(n)：计算从结点n到目标结点之间所形成路径的最小代价值， 这里将两点之间的直线距离作为启发函数。</p>
-<p>**贪婪最佳优先搜索(Greedy best-first search)**：评价函数f(n)&#x3D;启发函数h(n)</p>
-<p>A*<strong>算法</strong>：评价函数f(n)&#x3D;g(n)+h(n)，g(n) 表示从起始结点到结点n的开销代价值，h(n) 表示从结点n到目标结点路径中所估算的最小开销代价值。</p>
-<p><strong>A*算法的最优性</strong>：</p>
-<p>基于树搜索的A* 算法中，如果启发函数是可容的，则A*算法是最优的。</p>
-<p>基于图搜索的A* 算法中，如果启发函数是⼀致的，则A*算法是最优的。</p>
-<h3 id="对抗搜索（博弈搜索）"><a href="#对抗搜索（博弈搜索）" class="headerlink" title="对抗搜索（博弈搜索）"></a>对抗搜索（博弈搜索）</h3><p><strong>最小最大搜索算法</strong>：使用递归算法计算每个后继的最小最大值。</p>
-<p><strong>Alpha-Beta 剪枝搜索算法</strong>在Minimax算法中可减少被搜索的结点数，即在保证得到与原 Minimax算法同样的搜索结果时，剪去了不影响最终结果的搜索分枝。</p>
-<p><img src="/%5Cpic%5Cimage-20230608203805040-16862330439367.png" alt="image-20230608203805040"></p>
-<p>（MAX先手）</p>
-<h3 id="蒙特卡洛树搜索"><a href="#蒙特卡洛树搜索" class="headerlink" title="蒙特卡洛树搜索"></a>蒙特卡洛树搜索</h3><p><img src="/%5Cpic%5Cimage-20230608204534307-16862330461509.png" alt="image-20230608204534307"></p>
-<p><img src="/%5Cpic%5Cimage-20230608204542055.png" alt="image-20230608204542055"></p>
-<p><strong>贪心算法</strong></p>
-<p><img src="/%5Cpic%5Cimage-20230608205027809-168623304788711.png" alt="image-20230608205027809"></p>
-<p><strong>不足</strong>：忽略了其他从未摇动或很少摇动的赌博机，而失去了可能的机会。</p>
-<p><strong>ϵ-贪心算法</strong></p>
-<p><img src="/%5Cpic%5Cimage-20230608205457848-168623304936413.png" alt="image-20230608205457848"></p>
-<p><strong>不足</strong>：与被探索的次数无关。</p>
-<p><strong>上限置信区间算法</strong>：为每个动作的奖励期望计算一个估计范围，优先采用估计范围上限较高的动作。</p>
-<p><img src="/%5Cpic%5Cimage-20230608205827930-168623305180015.png" alt="image-20230608205827930"></p>
-<p><img src="/%5Cpic%5Cimage-20230608205954078.png" alt="image-20230608205954078"></p>
-<p><img src="/%5Cpic%5Cimage-20230608210116090.png" alt="image-20230608210116090"></p>
-<p><strong>蒙特卡洛树搜索算法（MCTS）</strong></p>
-<p><img src="/%5Cpic%5Cimage-20230608210247964-168623305527417.png" alt="image-20230608210247964"></p>
-<p><img src="/%5Cpic%5Cimage-20230608210322489-168623306089719.png" alt="image-20230608210322489"></p>
-<p><img src="/%5Cpic%5Cimage-20230608210354683.png" alt="image-20230608210354683"></p>
-<p><img src="/%5Cpic%5Cimage-20230608210406120-168623306797621.png" alt="image-20230608210406120"></p>
-<p><img src="/%5Cpic%5Cimage-20230608210749771-168623306991023.png" alt="image-20230608210749771"></p>
-<p>在更新时，会将MIN层结点现有总分 加上终局得分分数， MAX层结点现有总分减去终局得分分数。</p>
+<h3 id="机器学习基本概念"><a href="#机器学习基本概念" class="headerlink" title="机器学习基本概念"></a>机器学习基本概念</h3><p><strong>机器学习的分类（按数据标注情况分类）</strong></p>
+<p><strong>监督学习</strong>(supervised learning)：数据有标签、一般为回归或分类等任务</p>
+<p><strong>半监督学习</strong>(semi-supervised learning)：一部分数据有标签，一部分数据没有标签</p>
+<p><strong>无监督学习</strong>(un-supervised learning）：数据无标签、一般为聚类或若干降维任务</p>
+<p><strong>强化学习</strong>(reinforcement learning)：序列数据决策学习，一般为与从环境交互中学习</p>
+<p><strong>监督学习的重要元素</strong>：标注数据（学什么）、学习模型（如何学）、损失函数（学到否）</p>
+<p><img src="/%5Cpic%5Cimage-20230609102300782-16863015270241.png" alt="image-20230609102300782"></p>
+<p><img src="/%5Cpic%5Cimage-20230609102659014-16863015301043.png" alt="image-20230609102659014"></p>
+<p>根据大数定律，当样本容量趋于无穷时，经验风险趋于期望风险。 所以在实践中很自然用经验风险来估计期望风险。 由于现实中训练样本数目有限，用经验风险估计期望风险并不理 想，要对经验风险进行一定的约束。</p>
+<p><img src="/%5Cpic%5Cimage-20230609102847769-16863015315465.png" alt="image-20230609102847769"></p>
+<p><img src="/%5Cpic%5Cimage-20230609103132360-16863015335387.png" alt="image-20230609103132360"></p>
+<p><strong>监督学习方法</strong>又可以分为<strong>生成方法</strong>(generative approach)和<strong>判别方法</strong>(discriminative approach)。 所学到的模型分别称为<strong>生成模型</strong>(generative model)和<strong>判别模型</strong>(discriminative model)。</p>
+<p><strong>生成模型</strong>从数据中学习联合概率分布P(X, Y)（通过似然概率P(X|Y) 和类概率P(Y) 的乘积来求取。</p>
+<p>P(Y|X) &#x3D; P(X,Y)&#x2F;P(X)或者P(Y|X) &#x3D; P(X|Y)*P（Y）&#x2F;P(X）</p>
+<p>典型方法为贝叶斯方法、隐马尔可夫链。</p>
+<p><strong>判别方法</strong>直接学习判别函数f(X) 或者条件概率分布P(Y|X) 作为预测的模型，即判别模型。判别模型关心在给定输入数据下，预测该数据的输出是什么。</p>
+<p>典型判别模型包括回归模型、神经网络、支持向量机和Ada  boosting等。</p>
+<h3 id="线性回归与线性分类"><a href="#线性回归与线性分类" class="headerlink" title="线性回归与线性分类"></a>线性回归与线性分类</h3><p><strong>一元线性回归</strong></p>
+<p><img src="/%5Cpic%5Cimage-20230609104151321-16863015358889.png" alt="image-20230609104151321"></p>
+<p>求导过程省略，结果如下</p>
+<p><img src="/%5Cpic%5Cimage-20230609104425585-168630154148911.png" alt="image-20230609104425585"></p>
+<p><strong>多元线性回归</strong></p>
+<p><img src="/%5Cpic%5Cimage-20230609104834645-168630154314113.png" alt="image-20230609104834645"></p>
+<p>计算过程看不懂，结果如下</p>
+<p><img src="/%5Cpic%5Cimage-20230609105123015.png" alt="image-20230609105123015"></p>
+<p>还是看不懂？放个例子</p>
+<p><img src="/%5Cpic%5Cimage-20230609105211967.png" alt="image-20230609105211967"></p>
+<p><img src="/%5Cpic%5Cimage-20230609105221089.png" alt="image-20230609105221089"></p>
+<p><strong>广义线性模型</strong></p>
+<p>看不懂一点，贴张图意思意思。</p>
+<p><img src="/%5Cpic%5Cimage-20230609110644279.png" alt="image-20230609110644279"></p>
+<p><strong>对数几率回归</strong></p>
+<p>对数几率回归(logistic regression)就是在回归模型中引入sigmoid函数的一种广义线性模型。</p>
+<p><img src="/%5Cpic%5Cimage-20230609111016197.png" alt="image-20230609111016197"></p>
+<p><img src="/%5Cpic%5Cimage-20230609111645579.png" alt="image-20230609111645579"></p>
+<h3 id="线性判别分析"><a href="#线性判别分析" class="headerlink" title="线性判别分析"></a>线性判别分析</h3><p><img src="/%5Cpic%5Cimage-20230609112355285.png" alt="image-20230609112355285"></p>
+<p><img src="/%5Cpic%5Cimage-20230609113414781.png" alt="image-20230609113414781"></p>
+<p><strong>最小二乘法</strong></p>
+<p><img src="/%5Cpic%5Cimage-20230609113938102.png" alt="image-20230609113938102"></p>
+<p><strong>对数几率回归</strong></p>
+<p><img src="/%5Cpic%5Cimage-20230609114028235.png" alt="image-20230609114028235"></p>
+<p><strong>Fisher线性判别分析</strong></p>
+<p><img src="/%5Cpic%5Cimage-20230609114111253.png" alt="image-20230609114111253"></p>
+<p><img src="/%5Cpic%5Cimage-20230609121527105.png" alt="image-20230609121527105"></p>
+<h3 id="支持向量机"><a href="#支持向量机" class="headerlink" title="支持向量机"></a>支持向量机</h3><p><img src="/%5Cpic%5Cimage-20230609122947503.png" alt="image-20230609122947503"></p>
+<p><img src="/%5Cpic%5Cimage-20230609124201247.png" alt="image-20230609124201247"></p>
+<h3 id="决策树"><a href="#决策树" class="headerlink" title="决策树"></a>决策树</h3><p><img src="/%5Cpic%5Cimage-20230609153227140.png" alt="image-20230609153227140"></p>
+<p><img src="/%5Cpic%5Cimage-20230609153523059.png" alt="image-20230609153523059"></p>
+<p><img src="/%5Cpic%5Cimage-20230609153704702.png" alt="image-20230609153704702"></p>
+<p><img src="/%5Cpic%5Cimage-20230609154157388.png" alt="image-20230609154157388"></p>
+<p><img src="/%5Cpic%5Cimage-20230609154427090.png" alt="image-20230609154427090"></p>
+<p><img src="/%5Cpic%5Cimage-20230609154451735.png" alt="image-20230609154451735"></p>
+<p><img src="/%5Cpic%5Cimage-20230609154654662.png" alt="image-20230609154654662"></p>
+<p><img src="/%5Cpic%5Cimage-20230609163618609.png" alt="image-20230609163618609"></p>
+<h3 id="Ada-Boosting"><a href="#Ada-Boosting" class="headerlink" title="Ada Boosting"></a>Ada Boosting</h3><p><img src="/%5Cpic%5Cimage-20230609164237754.png" alt="image-20230609164237754"></p>
+<p><img src="/%5Cpic%5Cimage-20230609164306489.png" alt="image-20230609164306489"></p>
+<p><img src="/%5Cpic%5Cimage-20230609165545680.png" alt="image-20230609165545680"></p>
+<p><img src="/%5Cpic%5Cimage-20230609165609875.png" alt="image-20230609165609875"></p>
+<p><img src="/%5Cpic%5Cimage-20230609165618016.png" alt="image-20230609165618016"></p>
+<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>贴了一堆图是因为我真的看不懂一点了，根本不知道哪里才是重点，更不知道一个概念如何理解，除了背公式毫无办法，虽然由我这个不听课的来说不太合适，但就我参考周围同学的评价来说，这门课开的很突兀，很不合适，很愚蠢。</p>
 
     </div>
 
@@ -339,7 +375,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://example.com/2023/06/08/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%80%9F%E9%80%9A-%E6%90%9C%E7%B4%A2%E6%B1%82%E8%A7%A3/" title="人工智能速通--搜索求解">http://example.com/2023/06/08/人工智能速通-搜索求解/</a>
+    <a href="http://example.com/2023/06/09/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%80%9F%E9%80%9A-%E6%9C%89%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0/" title="人工智能速通--有监督学习">http://example.com/2023/06/09/人工智能速通-有监督学习/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -356,13 +392,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2023/06/07/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%80%9F%E9%80%9A-%E9%80%BB%E8%BE%91%E4%B8%8E%E6%8E%A8%E7%90%86/" rel="prev" title="人工智能考试速通--逻辑与推理">
-      <i class="fa fa-chevron-left"></i> 人工智能考试速通--逻辑与推理
+    <a href="/2023/06/08/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%80%9F%E9%80%9A-%E6%90%9C%E7%B4%A2%E6%B1%82%E8%A7%A3/" rel="prev" title="人工智能速通--搜索求解">
+      <i class="fa fa-chevron-left"></i> 人工智能速通--搜索求解
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2023/06/09/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%80%9F%E9%80%9A-%E6%9C%89%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0/" rel="next" title="人工智能速通--有监督学习">
-      人工智能速通--有监督学习 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -421,7 +454,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%80%9F%E9%80%9A%E2%80%94%E2%80%94%E6%90%9C%E7%B4%A2%E6%B1%82%E8%A7%A3"><span class="nav-number">1.</span> <span class="nav-text">人工智能速通——搜索求解</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%90%9C%E7%B4%A2%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80"><span class="nav-number">1.0.1.</span> <span class="nav-text">搜索算法基础</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%90%AF%E5%8F%91%E5%BC%8F%E6%90%9C%E7%B4%A2%EF%BC%88%E6%9C%89%E4%BF%A1%E6%81%AF%E6%90%9C%E7%B4%A2%EF%BC%89"><span class="nav-number">1.0.2.</span> <span class="nav-text">启发式搜索（有信息搜索）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AF%B9%E6%8A%97%E6%90%9C%E7%B4%A2%EF%BC%88%E5%8D%9A%E5%BC%88%E6%90%9C%E7%B4%A2%EF%BC%89"><span class="nav-number">1.0.3.</span> <span class="nav-text">对抗搜索（博弈搜索）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%A0%91%E6%90%9C%E7%B4%A2"><span class="nav-number">1.0.4.</span> <span class="nav-text">蒙特卡洛树搜索</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E9%80%9F%E9%80%9A%E2%80%93%E6%9C%89%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0"><span class="nav-number">1.</span> <span class="nav-text">人工智能速通–有监督学习</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-number">1.0.1.</span> <span class="nav-text">机器学习基本概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%E4%B8%8E%E7%BA%BF%E6%80%A7%E5%88%86%E7%B1%BB"><span class="nav-number">1.0.2.</span> <span class="nav-text">线性回归与线性分类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BA%BF%E6%80%A7%E5%88%A4%E5%88%AB%E5%88%86%E6%9E%90"><span class="nav-number">1.0.3.</span> <span class="nav-text">线性判别分析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%94%AF%E6%8C%81%E5%90%91%E9%87%8F%E6%9C%BA"><span class="nav-number">1.0.4.</span> <span class="nav-text">支持向量机</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%86%B3%E7%AD%96%E6%A0%91"><span class="nav-number">1.0.5.</span> <span class="nav-text">决策树</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Ada-Boosting"><span class="nav-number">1.0.6.</span> <span class="nav-text">Ada Boosting</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%86%99%E5%9C%A8%E6%9C%80%E5%90%8E"><span class="nav-number">1.0.7.</span> <span class="nav-text">写在最后</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
